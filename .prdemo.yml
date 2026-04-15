@@ -2,52 +2,7 @@ start: npm run dev
 ready: http://localhost:3000
 
 demo:
-  script:
-    - action: navigate
-      value: /
-      delay: 5000
-      narrate: "Welcome to the redesigned Task Tracker — now with an animated gradient background."
-
-    - action: click
-      selector: "li:nth-child(1) span"
-      delay: 3000
-      narrate: "Click a task to mark it complete. The checkbox toggles and the counter updates."
-
-    - action: click
-      selector: "li:nth-child(2) span"
-      delay: 3000
-      narrate: "Let's check off another one — two out of three done."
-
-    - action: click
-      selector: "li:nth-child(3) button"
-      delay: 4000
-      narrate: "Each task now has a Share button. Let's share this task with a teammate."
-
-    - action: type
-      selector: "input[type='email']"
-      value: "alex@company.com"
-      delay: 3000
-      narrate: "Type in a teammate's email address."
-
-    - action: type
-      selector: "textarea"
-      value: "Hey, can you take this one?"
-      delay: 3000
-      narrate: "Optionally add a note with some context."
-
-    - action: click
-      selector: "button[type='submit']"
-      delay: 3000
-      narrate: "Hit send and the task is shared — the button confirms with a green checkmark."
-
-    - action: navigate
-      value: /about
-      delay: 4000
-      narrate: "The About page also picks up the new dark theme automatically."
-
-    - action: navigate
-      value: /
-      delay: 3000
+  infer: true
       narrate: "Back on the home page, everything stays in sync."
 
     - action: wait
