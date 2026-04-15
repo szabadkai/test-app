@@ -3,10 +3,6 @@ ready: http://localhost:3000
 
 demo:
   infer: true
-      narrate: "Back on the home page, everything stays in sync."
-
-    - action: wait
-      delay: 2000
 
     - action: wait
       delay: 3000
