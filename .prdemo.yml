@@ -3,6 +3,3 @@ ready: http://localhost:3000
 
 demo:
   infer: true
-
-    - action: wait
-      delay: 3000
