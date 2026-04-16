@@ -2,11 +2,7 @@ start: npm run dev
 ready: http://localhost:3000
 
 demo:
-  script:
-    - action: navigate
-      value: /
-      delay: 5000
-      narrate: "Here's the Task Tracker with the new sidebar layout."
+  infer: true
 
     - action: click
       selector: "li:nth-child(1)"
