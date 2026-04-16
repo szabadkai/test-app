@@ -2,46 +2,4 @@ start: npm run dev
 ready: http://localhost:3000
 
 demo:
-  script:
-    - action: navigate
-      value: /
-      delay: 5000
-      narrate: "Here's the Task Tracker with the new sidebar layout."
-
-    - action: click
-      selector: "li:nth-child(1)"
-      delay: 4000
-      narrate: "Tasks still toggle complete with a click."
-
-    - action: click
-      selector: "li:nth-child(2)"
-      delay: 4000
-      narrate: "The completion counter updates as we check items off."
-
-    - action: click
-      selector: "aside li:nth-child(1)"
-      delay: 3000
-      narrate: "The sidebar shows a contacts list — click to select who to share with."
-
-    - action: click
-      selector: "aside li:nth-child(3)"
-      delay: 3000
-      narrate: "You can select multiple contacts at once."
-
-    - action: click
-      selector: "aside button"
-      delay: 4000
-      narrate: "Hit share and the pending tasks are sent to the selected contacts."
-
-    - action: click
-      selector: "aside nav a:nth-child(2)"
-      delay: 5000
-      narrate: "Navigation now lives in the sidebar instead of inline."
-
-    - action: click
-      selector: "aside nav a:nth-child(1)"
-      delay: 4000
-      narrate: "And clicking back to Tasks keeps everything in place."
-
-    - action: wait
-      delay: 3000
+  infer: true
